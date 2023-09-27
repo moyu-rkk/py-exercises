@@ -33,10 +33,10 @@ with open('./Input/Letters/starting_letter.txt', 'r') as letter_file:
 
 # If use: letter[0] = letter.replace('[name]', name_lst[i]),
 # It will always output 'Dear Aang', because the first element has been changed to 'Dear Aang' forever,
-# thus it can't fine '[name]' anymore.
+# thus it can't find '[name]' anymore.
 
 # Creating a new letter list 'new_letter' using phrase new_letter = letter also wouldn't help,
-# because 'new_letter' and 'letter' are two variables pointing to the same value/data.
-# You can modify the original date via both the two variables.
+# because 'new_letter' and 'letter' are two variables pointing to the same value/source data.
+# You can modify the original date via both variables.
 # But if you use new_letter = [str, str, ...] it will work,
 # because now letter and new_letter are pointing to different data which have exactly the same value.
